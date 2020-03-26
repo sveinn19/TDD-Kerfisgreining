@@ -1,3 +1,4 @@
 class Calculator:
     def add(string):
-        return 
+        if string == "":
+            return 0
