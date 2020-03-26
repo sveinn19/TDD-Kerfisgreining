@@ -6,3 +6,6 @@ def test_add_zero():
 
 def test_add_single_number():
     assert Calculator.add("1") == 1
+
+def test_add_two_numbers():
+    assert Calculator.add("1,2") == 3

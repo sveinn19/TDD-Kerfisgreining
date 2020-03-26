@@ -5,3 +5,6 @@ class Calculator:
 
         elif string.isdigit():
             return int(string)
+        
+        else:
+            return string + string[2]
