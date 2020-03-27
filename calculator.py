@@ -1,10 +1,12 @@
 class Calculator:
     def add(string):
-        if string == "":
-            return 0
-
-        elif string.isdigit():
-            return int(string)
+        sum = 0 
+        for i in string:
+            if i.isdigit():
+                sum += int(i)
         
-        else:
-            return string + string[2]
+        return sum
+        
+        
+        
+    
