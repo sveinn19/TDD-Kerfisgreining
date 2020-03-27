@@ -13,5 +13,12 @@ class Calculator:
                 temp_str += i
 
         lis.append(int(temp_str))
-        return sum(lis)
+        
+        sum = 0
+        for i in lis:
+            if i < 1000:
+                sum += i
+        
+        return sum 
+                
         
