@@ -15,3 +15,6 @@ def test_add_multiple_numbers():
     assert Calculator.add("1,2,3,4,5") == 15
     assert Calculator.add("10,2,5,22,1,1") == 41
 
+def test_add_with_newline_delimater():
+    assert Calculator.add("1\n2,3") == 6
+
