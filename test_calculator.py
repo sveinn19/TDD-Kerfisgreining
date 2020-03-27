@@ -13,4 +13,5 @@ def test_add_two_numbers():
 
 def test_add_multiple_numbers():
     assert Calculator.add("1,2,3,4,5") == 15
+    assert Calculator.add("10,2,5,22,1,1") == 42
 
