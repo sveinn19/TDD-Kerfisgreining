@@ -1,3 +1,7 @@
+class NegativeNumberException(Exception):
+    pass
+
+
 class Calculator:
     def add(string):
         if string == "":
@@ -7,6 +11,8 @@ class Calculator:
         temp_str = ""
         for i in string:
             if i.isdigit() == False:
+                if i == "-":
+                    raise NegativeNumberException("Negative number:")
                 lis.append(int(temp_str))
                 temp_str = ""
             else:
