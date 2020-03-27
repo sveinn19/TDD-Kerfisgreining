@@ -9,21 +9,22 @@ class Calculator:
 
         lis = []
         temp_str = ""
-        for i in string:
+        for i in string:  # "//X\n1X2"
             if i.isdigit() == False:
                 if i == "-":
                     raise NegativeNumberException("Negative number:")
-                lis.append(int(temp_str))
+                lis.append(temp_str)
                 temp_str = ""
             else:
                 temp_str += i
 
-        lis.append(int(temp_str))
+        lis.append(temp_str)
         
         sum = 0
         for i in lis:
-            if i < 1000:
-                sum += i
+            if i.isdigit():
+                if int(i) < 1000:
+                    sum += int(i)
         
         return sum 
                 
