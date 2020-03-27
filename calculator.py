@@ -4,12 +4,12 @@ class NegativeNumberException(Exception):
 
 class Calculator:
     def add(string):
-        if string == "":
-            return 0
+        # if string == "":
+        #     return 0
 
         lis = []
         temp_str = ""
-        for i in string:  # "//X\n1X2"
+        for i in string:
             if i.isdigit() == False:
                 if i == "-":
                     raise NegativeNumberException("Negative number:")

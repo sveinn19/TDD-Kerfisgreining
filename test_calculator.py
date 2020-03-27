@@ -29,4 +29,5 @@ def test_negative_nums():
 
 def test_new_delimeter():
     assert Calculator.add("//X\n1X2") == 3
+    assert Calculator.add("//%\n1%2%3") == 6
 
