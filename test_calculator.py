@@ -18,3 +18,6 @@ def test_add_multiple_numbers():
 def test_add_with_newline_delimater():
     assert Calculator.add("1\n2,3") == 6
 
+def test_add_num_bigger_1000():
+    assert Calculator.add("1002,2") == 2
+
