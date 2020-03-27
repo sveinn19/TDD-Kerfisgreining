@@ -27,3 +27,6 @@ def test_negative_nums():
     except Exception:
         pass
 
+def test_new_delimeter():
+    assert Calculator.add("//X\n1X2") == 3
+
