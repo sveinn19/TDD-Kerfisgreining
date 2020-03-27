@@ -9,3 +9,5 @@ def test_add_single_number():
 
 def test_add_two_numbers():
     assert Calculator.add("1,2") == 3
+    assert Calculator.add("5,6") == 11
+    
